@@ -10,7 +10,7 @@ const showConfirmAlert = () => {
   Swal.fire({
     title: '¿Quieres guardar los cambios?',
     showDenyButton: true,
-    showCancelButton: true,
+    showCancelButton: false,
     confirmButtonText: `Guardar`,
     denyButtonText: `Cancelar`,
   }).then((result) => {
