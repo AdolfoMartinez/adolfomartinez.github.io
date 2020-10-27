@@ -3,6 +3,8 @@ const showErrorAlert = () =>{
     icon: 'error',
     title: 'Oops...',
     text: 'Un campo está vacio',
+    timer: 2500,
+    showConfirmButton: false
   })
 }
 
@@ -19,13 +21,15 @@ const showConfirmAlert = () => {
       Swal.fire({
         icon: 'success',
         text: 'Cambios guardados',
-        timer: 2000
+        timer: 2000,
+        showConfirmButton: false
       })
     } else if (result.isDenied) {
       Swal.fire({
         icon: 'error',
         text: 'No se guardaron los cambios',
-        timer: 2000
+        timer: 2000,
+        showConfirmButton: false
       })
     }
   })
