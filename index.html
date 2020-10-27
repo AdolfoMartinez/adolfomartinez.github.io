@@ -1,21 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Adolfo Martínez</title>
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>HOME</title>
 </head>
-
 <body>
-    <div class="padre">
-        <div class="hijo">
-            <center>
-                <h1>Coming soon...</h1>
-            </center>
+    <div class="principal-box">
+        <h2 class="title">PetFeeder v2</h2>
+        <img class="logo" src="img/dog.jpg" alt="dog_logo">
+        <div class="dog_type_input">
+            <select class="input dog_selection" name="breed-menu" id="breed-selector" required>
+                <option value="" disabled selected>Raza</option>
+                <option value="1">Mini</option>
+                <option value="2">Pequeña</option>
+                <option value="3">Mediana</option>
+                <option value="4">Grande</option>
+            </select>
+            <!-- <img class="icon" src="img/info.svg" alt="info icon"> -->
+        </div>
+        <div class="hours_input">
+            <input class="input" type="text" id="hours_selector" min="1" max="24" required>
+            <input onclick="getInputData()" class="button" id="submit-button" type="submit" value="OK">
+            <input onclick="cancelScript()" class="button" id="cancel-button" type="submit" value="Cancel">
         </div>
     </div>
+    <script src="js/sweetalert2.all.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
-
 </html>
