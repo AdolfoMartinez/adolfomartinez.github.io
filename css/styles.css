@@ -1,12 +1,12 @@
 body{
-    /*background-color: #968c83;*/
-    /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
     background-image: url("/img/background.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .principal-box{
     letter-spacing: 1px;
-    font-family: 'Bebas Neue', cursive;
+    font-family: "Comic Sans MS", "Comic Sans";
     font-size: 1.5rem;
     background-color: #7DACBC;
     color: white;
@@ -54,6 +54,9 @@ body{
 }
 
 .button{
+    background-color: #EFEFEF;
+    color:#000;
+    font-size: 16px;
     margin: 15px auto;
     text-decoration: none;
     border: none;
